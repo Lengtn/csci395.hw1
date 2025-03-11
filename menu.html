@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Master Chef</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS stylesheet -->
+  <style>
+    /* Basic styles for desktop */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+    }
+
+    .logo img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    .menu-intro {
+      text-align: center;
+      padding: 40px;
+      background-color: #f4f4f4;
+    }
+
+    .menu-intro h1 {
+      font-size: 2.5rem;
+    }
+
+    .menu-intro p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    .menu {
+      padding: 40px;
+    }
+
+    .menu h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .menu-item {
+      margin-bottom: 20px;
+    }
+
+    .menu-item h3 {
+      font-size: 1.5rem;
+    }
+
+    .menu-item p {
+      font-size: 1.2rem;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer .social-media a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+    }
+
+    footer .business-hours p {
+      margin: 5px 0;
+    }
+
+    /* Mobile responsiveness with media queries */
+    @media only screen and (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav ul li {
+        margin: 10px 0;
+      }
+
+      .menu-intro h1 {
+        font-size: 2rem;
+      }
+
+      .menu-intro p {
+        font-size: 1.1rem;
+      }
+
+      .menu h2 {
+        font-size: 1.8rem;
+      }
+
+      .menu-item h3 {
+        font-size: 1.4rem;
+      }
+
+      .menu-item p {
+        font-size: 1.1rem;
+      }
+    }
+
+    @media only screen and (max-width: 480px) {
+      /* Further adjust for smaller screens */
+      .menu-intro h1 {
+        font-size: 1.8rem;
+      }
+
+      .menu-item h3 {
+        font-size: 1.2rem;
+      }
+
+      .menu-item p {
+        font-size: 1rem;
+      }
+
+      footer .business-hours p {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Restaurant Logo" width="600" height="400">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="menu-intro">
+    <h1>Our Menu</h1>
+    <p>We offer a wide range of delicious dishes, from appetizers to desserts. Enjoy your meal!</p>
+  </section>
+
+  <section class="menu">
+    <h2>Appetizers</h2>
+    <div class="menu-item">
+      <h3>Bruschetta</h3>
+      <p>A classic Italian starter with toasted bread, tomatoes, garlic, and basil. <strong>$8.99</strong></p>
+    </div>
+    <div class="menu-item">
+      <h3>Stuffed Mushrooms</h3>
+      <p>Fresh mushrooms stuffed with a savory blend of cheese and herbs. <strong>$7.49</strong></p>
+    </div>
+
+    <h2>Main Dishes</h2>
+    <div class="menu-item">
+      <h3>Grilled Salmon</h3>
+      <p>Freshly grilled salmon with a lemon-butter sauce, served with vegetables. <strong>$19.99</strong></p>
+    </div>
+    <div class="menu-item">
+      <h3>Pasta Primavera</h3>
+      <p>A mix of fresh vegetables tossed in a creamy pasta sauce. <strong>$14.99</strong></p>
+    </div>
+
+    <h2>Desserts</h2>
+    <div class="menu-item">
+      <h3>Chocolate Lava Cake</h3>
+      <p>Warm, gooey chocolate cake with a molten center. <strong>$6.99</strong></p>
+    </div>
+    <div class="menu-item">
+      <h3>Tiramisu</h3>
+      <p>A classic Italian dessert made with mascarpone cheese and coffee-soaked ladyfingers. <strong>$5.99</strong></p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="social-media">
+      <a href="https://facebook.com" target="_blank">Facebook</a>
+      <a href="https://instagram.com" target="_blank">Instagram</a>
+    </div>
+    <div class="business-hours">
+      <p>Mon - Fri: 10 AM - 8 PM</p>
+      <p>Sat - Sun: 11 AM - 10 PM</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
